@@ -9,9 +9,9 @@ ObjectImage::ObjectImage() :
 {
 }
 
-void ObjectImage::draw()
+void ObjectImage::draw(int GraphSize)
 {
 	//DrawGraph(static_cast<int>(m_PlayerPos.x), static_cast<int>(m_PlayerPos.y), m_hPlayer, true);
-	DrawRotaGraphF(m_PlayerPos.x,m_PlayerPos.y, 1.0f, m_playerAngle/2, m_hPlayer, true);
+	
 
 }

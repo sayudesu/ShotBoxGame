@@ -2,7 +2,8 @@
 #include "SceneBase.h"
 #include "Vec2.h"
 
-class ObjectImage;
+class ObjectPlayer;
+class ObjectEnemy;
 
 class SceneMain : public SceneBase
 {
@@ -23,9 +24,10 @@ private:
 	bool m_isEnd;
 
 	int m_hPlayer;
-	float m_playerAngle;
 
-	Vec2 m_pos;
+	Vec2 m_EnemyPos;
 
-	ObjectImage* m_pObjectImage;
+	Vec2 m_target;
+	ObjectPlayer* m_pObjectPlayer;
+	ObjectEnemy* m_pObjectEnemy;
 };

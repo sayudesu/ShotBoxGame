@@ -24,8 +24,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// Å‰‚ÌƒV[ƒ“‚Ì‰Šú‰»
 	SceneManager scene;
-	scene.init();
 	DINPUT_JOYSTATE input;
+	scene.init();
 
 	while (ProcessMessage() == 0)
 	{

@@ -1,8 +1,6 @@
 #pragma once
 #include "Vec2.h"
 
-class SceneMain;
-
 class ObjectImage
 {
 public:
@@ -15,10 +13,10 @@ public:
 	virtual void update() {};
 
 	void setHandle(int Player) { m_hPlayer = Player; }
-	void getPos(Vec2 pos) { m_PlayerPos = pos; }
+	//void getPos(Vec2 pos) { m_PlayerPos = pos; }
 	void getAngle(float handleAngle) {m_playerAngle = handleAngle; }
 
-	virtual void draw();
+	virtual void draw(int GraphSize);
 
 protected:
 	// グラフィックハンドル
